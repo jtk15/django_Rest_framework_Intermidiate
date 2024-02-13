@@ -8,3 +8,9 @@ class CourseAPIView(generics.ListCreateAPIView):
     
     queryset = Course.objects.all()
     serializer_class = CourseSerializer
+
+
+class AssessmentAPIView(generics.ListCreateAPIView):
+    
+    queryset = Assessment.objects.all()
+    serializer_class = AssessmentSerializer
