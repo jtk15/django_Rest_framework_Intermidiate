@@ -21,6 +21,11 @@ class Course(Base):
         
         verbose_name = 'Curso'
         verbose_name_plural = 'Cursos'
+    
+    def __str__(self):
+        
+        return self.title
+    
 
 
 class Assessment(Base):
@@ -35,3 +40,8 @@ class Assessment(Base):
         verbose_name = 'Avaliação'
         verbose_name_plural = 'Avaliações'
         unique_together = ['email', 'course']
+    
+    def __str__(self):
+        
+        return 'Avaliação'
+    
