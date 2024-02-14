@@ -9,6 +9,11 @@ class CourseAPIView(generics.ListCreateAPIView):
     queryset = Course.objects.all()
     serializer_class = CourseSerializer
 
+class CourseOneAPIView(generics.RetrieveUpdateDestroyAPIView):
+    
+    queryset = Course.objects.all()
+    serializer_class = CourseSerializer
+
 
 class AssessmentAPIView(generics.ListCreateAPIView):
     

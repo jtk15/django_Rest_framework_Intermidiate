@@ -8,7 +8,7 @@ class CourseSerializer(serializers.ModelSerializer):
     class Meta:
        
         model = Course
-        fields  = ['title', 'url', 'criation', 'update', 'active']
+        fields  = ['id','title', 'url', 'criation', 'update', 'active']
 
 
 class AssessmentSerializer(serializers.ModelSerializer):
@@ -16,4 +16,4 @@ class AssessmentSerializer(serializers.ModelSerializer):
     class Meta:
         
         model = Assessment
-        fields = ['course', 'email', 'score', 'comment', 'criation', 'update', 'active']
+        fields = ['id', 'course', 'email', 'score', 'comment', 'criation', 'update', 'active']
